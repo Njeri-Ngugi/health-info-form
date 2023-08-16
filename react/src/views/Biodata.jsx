@@ -375,7 +375,7 @@ const Biodata = ({ userID, facilityID, addressID, setUserID, setFacilityID, setA
                             <div className="facilityName">
                                 <div className="facilityNameLabel">
                                     <h3 className='addressHeading'>
-                                        CurrentAddress</h3>
+                                        Current Address</h3>
                                     <label htmlFor='AddressName'>Facility Name (if applicable)</label>
                                 </div>
                                 <div>
