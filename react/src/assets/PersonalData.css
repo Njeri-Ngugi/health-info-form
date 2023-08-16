@@ -1,0 +1,411 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@600&family=Poppins&family=Work+Sans:wght@300;400;500;700;800&display=swap');
+
+body {
+    background-color: #00000018;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 300;
+}
+
+.containerBox {
+    max-width: 550px;
+    margin: 30px auto;
+    padding: 0px;
+    padding-bottom: 20px;
+    border-radius: 20px 20px 0px 0px;
+    background-color: #fff;
+    box-shadow: 0 0 20px 0 #01014e;
+}
+
+.banner {
+    position: relative;
+    height: 150px;
+    background-image: url("./images/healthcare_image.png");
+    background-size: cover;
+    background-position: bottom -240px left 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    max-width: 800px;
+    margin: 0px auto;
+    /* padding: 0px 50px; */
+    border-radius: 20px 20px 0px 0px;
+}
+
+.banner::after {
+    content: "";
+    background-color: rgba(0, 0, 0, 0.2);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px 20px 0px 0px;
+}
+
+h1 {
+    color: #696969;
+    font-size: 16px;
+    padding: 20px 0px 5px 0px;
+    margin: auto auto;
+    text-transform: uppercase;
+}
+
+
+.content {
+    max-width: 550px;
+    margin: 0px auto;
+    padding: 0px 40px;
+    border-radius: 0px 0px 0px 0px;
+}
+
+
+label {
+    font-size: 14px;
+    font-weight: 500;
+    color: #6b6b6b;
+    text-transform: uppercase;
+}
+
+input {
+    /* background-color: #00000010; */
+    /* border: 1px #b7b7b7 solid; */
+    border: none;
+    outline: none;
+    background: transparent;
+    border-bottom: 1px solid #b7b7b7;
+    /* padding: 10px;
+    border-radius: 5px; */
+    width: 130px;
+    font-size: 16px;
+}
+
+input:focus {
+    border: none;
+    border-bottom-color: #b7b7b7;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+.DOBInput:focus {
+    outline: none;
+    box-shadow: none;
+    border-bottom: 1px solid #b7b7b7;
+    background-color: none;
+}
+
+input::placeholder {
+    font-family: 'Work Sans', sans-serif;
+    color: #282828;
+}
+
+input[type='date'] {
+    font-family: 'Work Sans', sans-serif;
+    color: #282828;
+}
+
+
+.star {
+    color: rgb(250, 13, 13);
+    font-size: 14px;
+}
+
+span {
+    padding-left: 5px;
+}
+
+.middleInitialInput {
+    width: 80px;
+}
+
+.namesLabels {
+    padding-top: 20px;
+}
+
+.namesLabels,
+.namesInputs {
+    display: grid;
+    grid-template-columns: 170px 160px 100px;
+}
+
+.DOBGender {
+    display: grid;
+    grid-template-columns: 150px 200px;
+}
+
+.DOBs,
+.genders,
+.names,
+.hispanics,
+.races {
+    padding-bottom: 30px;
+}
+
+.DOBInput {
+    width: 300px;
+}
+
+.gendersLabel,
+.DOBLabel,
+.namesLabels,
+.hispanicsLabels,
+.racesLabel {
+    padding-bottom: 5px;
+}
+
+.gendersInputs {
+    display: grid;
+    grid-template-columns: 180px 100px;
+}
+
+.racesInputsRow1,
+.racesInputsRow2 {
+    display: grid;
+    grid-template-columns: 180px 220px;
+    padding-bottom: 8px;
+}
+
+.genderRadios,
+.raceRadios,
+#Other,
+.hispanicRadios {
+    width: 20px;
+    margin-left: 0px;
+}
+
+.gendersInputs div label,
+.racesInputsRow1 div label,
+.racesInputsRow2 div label,
+.racesInputsRow3 div label,
+.hispanicsInputs div label {
+    color: #282828;
+    text-transform: capitalize;
+    font-size: 15px;
+}
+
+#OtherDescription {
+    border-bottom-width: 2px;
+    border-radius: 0px;
+    border-top: 0px none;
+    border-left: 0px none;
+    border-right: 0px none;
+    height: auto;
+    padding: 0px;
+    width: 140px;
+    margin-left: 20px;
+}
+
+#OtherDescription:focus {
+    outline: none;
+    box-shadow: none;
+    border-bottom: 1px solid #b7b7b7;
+    background-color: none;
+}
+
+.hispanicsInputs {
+    display: grid;
+    grid-template-columns: 90px 90px 120px;
+}
+
+
+.submitButton {
+    background-color: #1259c5;
+    font-family: 'Work Sans', sans-serif;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    color: #f7f7f7;
+    text-transform: uppercase;
+    font-weight: 700;
+    width: 180px;
+    margin: 0px 110px;
+}
+
+.submitButtonDiv {
+    padding-top: 20px;
+}
+
+/************************* Facility Form Styles *********************/
+.facilityHeading,
+.addressHeading {
+    color: #696969;
+    font-size: 16px;
+    text-align: left;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.facilityLabel,
+.cityLabel,
+.countyLabel,
+.stateLabel,
+.telLabel,
+.medLabel {
+    padding-bottom: 5px;
+}
+
+.facilityInput {
+    width: 438px;
+}
+
+.cityInput,
+.countyInput,
+.stateInput,
+.telInput,
+.medInput {
+    width: 200px;
+}
+
+.medInput {
+    padding: 0px;
+}
+
+.facility,
+.city,
+.county,
+.state,
+.tel,
+.med {
+    display: block;
+    padding-bottom: 20px;
+}
+
+.med {
+    display: grid;
+    grid-template-columns: 200px 100px;
+}
+
+.cityAndCounty,
+.stateAndTelNo {
+    display: grid;
+    grid-template-columns: 210px 210px;
+    column-gap: 30px;
+}
+
+.stateAndTelNo {
+    padding-bottom: 20px;
+}
+
+.submitButtonFacilityDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+}
+
+
+/******************* Address Info Form  *******************/
+
+.facilityName,
+.street,
+.addressCity,
+.addressCounty,
+.addressState {
+    display: block;
+    padding-bottom: 20px;
+}
+
+.facilityNameInput,
+.streetInput,
+.addressCityInput,
+.addressCountyInput,
+.addressStateInput {
+    width: 200px;
+}
+
+.facilityNameLabel,
+.streetLabel,
+.addressCityLabel,
+.addressCountyLabel,
+.addressStateLabel {
+    padding-bottom: 10px;
+}
+
+.facilityNameInput {
+    width: 438px;
+}
+
+.streetAndCity,
+.countyAndState {
+    display: grid;
+    grid-template-columns: 210px 210px;
+    column-gap: 30px;
+}
+
+.submitButtonAddressDiv {
+    padding-top: 20px;
+}
+
+@media screen and (max-width:600px) {
+    .content {
+        max-width: 500px;
+        padding: 0px 20px;
+    }
+
+    label,
+    input {
+        font-size: 12px;
+    }
+
+    .star {
+        font-size: 8px;
+    }
+
+    .facilityHeading,
+    .addressHeading {
+        font-size: 16px;
+    }
+
+    .facilitySection,
+    .addressSection {
+        padding-left: 0px;
+    }
+
+    .namesLabels,
+    .namesInputs {
+        display: grid;
+        grid-template-columns: 150px 140px 90px;
+        column-gap: 10px;
+    }
+
+    .firstNameInput,
+    .lastNameInput {
+        width: 100px;
+    }
+
+    .middleInitialInput {
+        width: 50px;
+    }
+
+    .facilitySection,
+    .addressSection {
+        padding: 0px 10px;
+    }
+
+    
+
+    .facilityInput {
+        width: 408px;
+    }
+
+    .cityInput,
+    .countyInput,
+    .stateInput,
+    .telInput,
+    .medInput {
+        width: 170px;
+    }
+
+
+    .streetInput,
+    .addressCityInput,
+    .addressCountyInput,
+    .addressStateInput {
+        width: 170px;
+    }
+
+    .facilityNameInput
+    {
+        width: 408px;
+    }
+
+}
