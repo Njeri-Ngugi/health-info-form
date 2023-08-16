@@ -81,7 +81,10 @@ input {
 input:focus {
     border: none;
     border-bottom-color: #b7b7b7;
+    background: transparent;
 }
+
+
 
 input[type="text"]:focus,
 input[type="number"]:focus,
@@ -90,6 +93,20 @@ input[type="number"]:focus,
     box-shadow: none;
     border-bottom: 1px solid #b7b7b7;
     background-color: none;
+}
+
+
+input:-webkit-autofill,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+    background-color: #ffffff;
+    -webkit-box-shadow: 0 0 0 40px white inset !important;
+    transition: background-color 5000s ease-in-out 0s;
 }
 
 input::placeholder {
@@ -381,7 +398,7 @@ span {
         padding: 0px 10px;
     }
 
-    
+
 
     .facilityInput {
         width: 408px;
@@ -403,9 +420,17 @@ span {
         width: 170px;
     }
 
-    .facilityNameInput
-    {
+    .facilityNameInput {
         width: 408px;
     }
 
+}
+
+/* MODAL STYLING */
+.modal {
+    display: none;
+}
+
+.modal.is-active {
+    display: block;
 }

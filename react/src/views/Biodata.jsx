@@ -352,7 +352,7 @@ const Biodata = ({ userID, facilityID, addressID, setUserID, setFacilityID, setA
                                         <label htmlFor='FacilityTelNo'>Phone Number</label>
                                     </div>
                                     <div className="Input">
-                                        <input className="telInput" type="number" placeholder='254712345678' name="FacilityTelNo" value={formData.FacilityTelNo} onChange={handleChangeForm} />
+                                        <input className="telInput" type="number" name="FacilityTelNo" value={formData.FacilityTelNo} onChange={handleChangeForm} />
                                     </div>
                                 </div>
                             </div>
@@ -375,7 +375,7 @@ const Biodata = ({ userID, facilityID, addressID, setUserID, setFacilityID, setA
                             <div className="facilityName">
                                 <div className="facilityNameLabel">
                                     <h3 className='addressHeading'>
-                                        Current Address</h3>
+                                        CurrentAddress</h3>
                                     <label htmlFor='AddressName'>Facility Name (if applicable)</label>
                                 </div>
                                 <div>

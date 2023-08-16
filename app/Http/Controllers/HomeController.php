@@ -90,12 +90,12 @@ class HomeController extends Controller
     
     public function update(Request $request, $userId, $facilityId, $addressId)
     {
-        // Retrievs record from the respective tables if ID is present
+        // Retrievs ID for record to be updated
         $userInfo = User::findOrfail($userId);
         $facilityInfo = Facility::findOrfail($facilityId);
         $addressInfo = Address::findOrfail($addressId);
 
-        // If ID doesn't exist, return error 400
+        // If ID doesn't exist, return error 
         if ($userInfo->update($request->all()) === false || $facilityInfo->update($request->all()) === false || $addressInfo->update($request->all()) === false) {
             return response('Error, user does not exist', Response::HTTP_BAD_REQUEST);
         }
